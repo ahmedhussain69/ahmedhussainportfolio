@@ -1,0 +1,388 @@
+/* CSS VARIABLES */
+:root {
+  --textcolor: #cbfffa;
+  --bgcolor: rgba(37, 37, 37);
+}
+
+/* reset section */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+  background-color: rgb(220, 220, 220);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+  background: rgba(37, 37, 37);
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: auto;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #cbfffa;
+}
+
+.navigation a:hover {
+  background: #1565c0;
+}
+
+/* HERO SECTION STYLING */
+
+.hero-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(/assests/images/herobg.jpg);
+  height: 198px;
+  width: 100%;
+  margin: auto;
+}
+
+.hero-banner h2 {
+  color: var(--textcolor);
+  font-size: 36px;
+}
+
+.hero-banner h2 {
+  z-index: 2;
+  color: var(--textcolor);
+  font-size: 36px;
+}
+
+/* SECTION STYLING */
+
+.page-wrapper {
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+#about h2 {
+  flex-grow: 0;
+  padding-top: 20px;
+  color: rgb(4, 59, 92);
+  font-size: 48px;
+  border-right: 4px solid black;
+  text-align: right;
+  min-width: 205px;
+}
+
+#about img {
+  flex-grow: 0;
+  max-height: 300px;
+  padding-top: 20px;
+}
+
+#about p {
+  max-width: 800px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+#portfolio {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+#portfolio h2 {
+  padding-top: 20px;
+  color: rgb(4, 59, 92);
+  font-size: 48px;
+  border-right: 4px solid black;
+  text-align: right;
+  min-width: 205px;
+}
+
+#portfolio a .img1 {
+  flex-grow: 0;
+  max-height: 400px;
+  min-width: 1206px;
+  padding-top: 20px;
+}
+
+#portfolio a .img2 {
+  max-height: 200px;
+  min-width: 600px;
+  margin-left: 213px;
+}
+#portfolio a .img3 {
+  flex-grow: 0;
+  max-height: 200px;
+  min-width: 600px;
+}
+#portfolio a .img4 {
+  max-height: 200px;
+  min-width: 600px;
+  margin-left: 213px;
+}
+#portfolio a .img5 {
+  flex-grow: 0;
+  max-height: 200px;
+  min-width: 600px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
+}
+
+#contact h2 {
+  flex-grow: 0;
+  padding-top: 20px;
+  color: rgb(4, 59, 92);
+  font-size: 48px;
+  border-right: 4px solid black;
+  text-align: right;
+  min-width: 205px;
+}
+
+#contact .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1206px;
+}
+#contact .contact-info .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1206px;
+  height: 200px;
+  font-size: 24px;
+  padding: 0 20px;
+  margin: 0 10px;
+  font-size: 24;
+}
+
+#resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
+  padding-top: 20px;
+}
+
+#resume h2 {
+  flex-grow: 0;
+  padding-top: 20px;
+  color: rgb(4, 59, 92);
+  font-size: 48px;
+  border-right: 4px solid black;
+  text-align: right;
+  min-width: 205px;
+}
+
+#resume p {
+  min-width: 1206px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* ASIDE SECTION STYLING */
+
+/* @media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+  .hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+} */
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #about h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #about img {
+    display: none;
+  }
+
+  #about p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .photo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #portfolio {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+
+  #portfolio h2 {
+    display: flex;
+    padding-top: 20px;
+    color: rgb(4, 59, 92);
+    font-size: 48px;
+    border-right: none;
+    text-align: right;
+    min-width: 205px;
+  }
+
+  #portfolio a .img1 {
+    display: none;
+  }
+  #portfolio a .img2 {
+    display: none;
+  }
+  #portfolio a .img3 {
+    display: none;
+  }
+  #portfolio a .img4 {
+    display: none;
+  }
+  #portfolio a .img5 {
+    display: none;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    column-gap: 0.5rem;
+  }
+
+  #contact h2 {
+    padding-top: 20px;
+    color: rgb(4, 59, 92);
+    font-size: 48px;
+    border-right: none;
+    text-align: center;
+  }
+
+  #contact .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1206px;
+  }
+  #contact .contact-info .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 24px;
+    padding: 0 20px;
+    margin: 0 10px;
+  }
+
+  #resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    column-gap: 0.5rem;
+    padding-top: 20px;
+  }
+
+  #resume h2 {
+    flex-grow: 0;
+    padding-top: 20px;
+    color: rgb(4, 59, 92);
+    font-size: 48px;
+    border-right: none;
+    text-align: center;
+    min-width: 205px;
+  }
+
+  #resume p {
+    min-width: 1206px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+  }
+}
