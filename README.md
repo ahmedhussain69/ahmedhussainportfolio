@@ -2,7 +2,7 @@
 
 ## Link:
 
-https://ahmedhussain69.github.io/Week1Challenge1/<br>
+https://ahmedhussain69.github.io/ahmedhussainportfolio/<br>
 ![Screenshot of end result:](assets/images/endresult.PNG)
 
 ## Project Description:
