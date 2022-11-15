@@ -67,7 +67,7 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(/assests/images/herobg.jpg);
+  background-image: url(../images/herobg.jpg);
   height: 198px;
   width: 100%;
   margin: auto;
